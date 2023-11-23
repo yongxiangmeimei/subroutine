@@ -1,0 +1,27 @@
+#include <windows.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a;
+	a=MessageBox(0,"內容","標題",MB_NOFOCUS );//是=6，否=7，取消=2 
+	cout<<a;
+}/* 
+MB_OK  OK
+MB_OKCANCEL   確定 取消 
+MB_ABORTRETRYIGNORE  終止 重試 略過
+MB_YESNOCANCEL  是 否 取消 
+MB_YESNO  是 否 
+MB_RETRYCANCEL  重試 取消
+MB_CANCELTRYCONTINUE  取消 重試 繼續 
+MB_ICONHAND  (X)確定同 MB_ICONERROR、MB_ICONSTOP 
+MB_ICONQUESTION(？)確定
+MB_ICONEXCLAMATION   (三角形！)確定同 MB_ICONWARNING 
+MB_ICONASTERISK  (圓！)確定 同MB_ICONINFORMATION 
+MB_USERICON  確定 置中 
+MB_DEFBUTTON1  MB_DEFBUTTON2 MB_DEFBUTTON3 MB_DEFBUTTON4 MB_APPLMODAL MB_TASKMODAL MB_NOFOCUS MB_SETFOREGROUND MB_DEFAULT_DESKTOP_ONLY確定 靠左下
+MB_SYSTEMMODAL  system確定
+MB_HELP  確定 說明 
+MB_NOFOCUS 確定 
+MB_RIGHT 確定靠右 
+*/ 
